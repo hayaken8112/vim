@@ -31,17 +31,17 @@ if executable('clang-format-3.6')
         autocmd BufWrite,FileWritePre,FileAppendPre *.[ch] call s:clang_format()
     augroup END
 endif
-" neobundle
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-"ここにpluginを入れていく
-NeoBundle 'fcpg/vim-fahrenheit'
-NeoBundle 'scrooloose/nerdtree'
-"ここまでにpluginを入れていく
-
-call neobundle#end()
-filetype plugin indent on
-
-"installしてないやつがあったらするかチェックしてくれるやつ
-NeoBundleCheck
+"" neobundle
+"set runtimepath+=~/.vim/bundle/neobundle.vim/
+"call neobundle#begin(expand('~/.vim/bundle/'))
+"
+""ここにpluginを入れていく
+"NeoBundle 'fcpg/vim-fahrenheit'
+"NeoBundle 'scrooloose/nerdtree'
+""ここまでにpluginを入れていく
+"
+"call neobundle#end()
+"filetype plugin indent on
+"
+""installしてないやつがあったらするかチェックしてくれるやつ
+"NeoBundleCheck
